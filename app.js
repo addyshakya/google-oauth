@@ -26,7 +26,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({
-    mongoUrl: 'mongodb://127.0.0.1:27017/google-oauth',
+    mongoUrl: 'mongodb+srv://shakyaaditya469:<password>@cluster007.ivqtjsx.mongodb.net/?retryWrites=true&w=majority',
     autoRemove: 'disabled'
   })
 }));
