@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/google-oauth')
+mongoose.connect('mongodb+srv://shakyaaditya469:Aaditya1@cluster007.ivqtjsx.mongodb.net/?retryWrites=true&w=majority')
 
 var userSchema = mongoose.Schema({
   username:String,
