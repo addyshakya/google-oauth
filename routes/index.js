@@ -8,7 +8,7 @@ require('dotenv').config()
 passport.use(new GoogleStrategy({
   clientID: process.env['GOOGLE_CLIENT_ID'],
   clientSecret: process.env['GOOGLE_CLIENT_SECRET'],
-  callbackURL: 'https://oauth-nwsm.onrender.com',
+  callbackURL: '/oauth2/redirect/google',
   scope: [ 'email', 'profile' ]
 }, async function verify(issuer, profile, cb) {
   let existingUser =  await User.findOne({email:profile.emails[0].value})
